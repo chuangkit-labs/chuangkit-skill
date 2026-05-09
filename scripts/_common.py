@@ -7,7 +7,7 @@ import urllib.request
 
 
 API_KEY_ENV = "CHUANGKIT_AGENT_SKILL_API_KEY"
-DEFAULT_BASE_URL = "https://local-gw.chuangkit.com/aigc"
+DEFAULT_BASE_URL = "https://gw.chuangkit.com/aigc"
 
 
 def require_env(name):
