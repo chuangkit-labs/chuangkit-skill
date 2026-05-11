@@ -111,8 +111,10 @@ python3 scripts/query_request_status.py --request-id "<request_id>"
 从请求结果中提取生成图片并下载到本地。
 
 ```bash
-python3 scripts/download_results.py --request-id "<request_id>" --output-dir ./outputs
+python3 scripts/download_results.py --request-id "<request_id>"
 ```
+
+默认下载目录是 `~/Downloads/chuangkit-agent-results`。只有当用户明确要求保存到指定路径时，才额外传 `--output-dir <path>`。
 
 ## 标准工作流
 
@@ -152,12 +154,13 @@ python3 scripts/download_results.py --request-id "<request_id>" --output-dir ./o
 - 上传返回的 `file_key` 只作为 `--image-file-key` 传给 `send_message.py`。
 - 不要把私库 `file_key` 当作公开 URL 发送给用户。
 - 当前主要面向参考图工作流。视频文件可以上传，但视频编辑链路需要先验证结果；不要承诺一定支持视频编辑。
+- 下载结果时，默认不要自定义输出目录。仅在用户明确要求保存到某个路径时，才传 `--output-dir`。
 
 ## 结果交付
 
 正常完成时，回复内容应包含：
 
-- 设计画布链接：`design_url`
+- 设计画布链接：`design_url`,如果参数没有返回，则按照规则拼接返回，设计画布地址[点我查看画布](https://www.chuangkit.com/odyssey/design?d={design_id})
 - 本地下载文件：`download_results.py` 返回的文件路径
 - 后续续作所需信息：`session_id`
 
@@ -174,3 +177,4 @@ python3 scripts/download_results.py --request-id "<request_id>" --output-dir ./o
 - 发起任务失败：返回接口错误信息，保留用户原始需求。
 - 轮询失败：返回 `request_id` 和错误信息，方便继续排查。
 - 下载失败：不要宣称文件已下载；返回 `design_url` 和失败原因。
+- 任何失败都提示用户可以访问创客贴官网联系客服处理，提供对应的request_id，session_id，design_id任意都可以，官网地址[创客贴官网](https://www.ckt.cn)

@@ -4,7 +4,7 @@
 
 `chuangkit-skill` 面向“生成一张图”“基于这版继续改”“做一段视频”“上传参考图再出几版”这类真实创作任务。它不是一个通用 SDK，而是一个围绕创作会话、设计画布和结果交付打磨过的 Agent Skill。
 
-License: Pending  Python 3.6+
+License: MIT  Python 3.6+
 
 ## ✨ 简介
 
@@ -164,6 +164,8 @@ python3 scripts/download_results.py --request-id "<request_id>"
 ~/Downloads/chuangkit-agent-results
 ```
 
+如果用户明确指定保存路径，再传 `--output-dir "<path>"`。
+
 ## 📁 项目结构
 
 ```text
@@ -202,4 +204,6 @@ chuangkit-skill/
 
 ## 📄 License
 
+本项目采用 [MIT License](/Users/wangxt/workspace/project/aigc/chuangkit-skill/LICENSE) 开源。
 
+Copyright © 2026 `chuangkit-labs`
