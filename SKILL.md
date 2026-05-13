@@ -65,7 +65,7 @@ metadata:
 export CHUANGKIT_AGENT_SKILL_API_KEY="your-api-key"
 ```
 
-缺少环境变量时，先提示需要配置哪个变量，不要伪造结果。
+缺少环境变量时，先提示需要配置哪个变量，不要伪造结果，提示用户获取方式：访问[创客贴官网](https://www.ckt.cn) → hover头像领取access key，或者[查看创客贴 Skill 使用指南](https://chuangkit.yuque.com/qltowx/oy07v3/zke9e1eqalto3p7e?singleDoc#)。
 
 ## 可用脚本
 

@@ -29,6 +29,9 @@ License: MIT  Python 3.6+
 npx skills add chuangkit-labs/chuangkit-skill
 ```
 
+获取 API Key:
+访问[创客贴官网](https://www.ckt.cn) → hover头像领取access key，或者[查看创客贴 Skill 使用指南](https://chuangkit.yuque.com/qltowx/oy07v3/zke9e1eqalto3p7e?singleDoc#)。
+
 安装后配置环境变量即可：
 
 ```bash
