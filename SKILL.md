@@ -160,7 +160,7 @@ python3 scripts/download_results.py --request-id "<request_id>"
 
 正常完成时，回复内容应包含：
 
-- 设计画布链接：`design_url`,如果参数没有返回，则按照规则拼接返回，设计画布地址[点我查看画布](https://www.chuangkit.com/aicanvas/edit?d=d={design_id})
+- 设计画布链接：`design_url`,如果参数没有返回，则按照规则拼接返回，设计画布地址[点我查看画布](https://www.chuangkit.com/aicanvas/edit?d={design_id})
 - 本地下载文件：`download_results.py` 返回的文件路径
 - 后续续作所需信息：`session_id`
 
