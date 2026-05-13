@@ -23,16 +23,17 @@ License: MIT  Python 3.6+
 
 ## 📥 快速安装
 
-如果你按 `skills` 仓库模式分发这个项目，可以直接安装：
+1、安装SKILL：
 
 ```bash
 npx skills add chuangkit-labs/chuangkit-skill
 ```
 
-获取 API Key:
-访问[创客贴官网](https://www.ckt.cn) → hover头像领取access key，或者[查看创客贴 Skill 使用指南](https://chuangkit.yuque.com/qltowx/oy07v3/zke9e1eqalto3p7e?singleDoc#)。
+2、获取 API KEY:
 
-安装后配置环境变量即可：
+> 访问[创客贴官网](https://www.ckt.cn) → hover头像领取access key，或者[查看创客贴 Skill 使用指南](https://chuangkit.yuque.com/qltowx/oy07v3/zke9e1eqalto3p7e?singleDoc#)。
+
+3、配置 API KEY 环境变量：
 
 ```bash
 export CHUANGKIT_AGENT_SKILL_API_KEY="your-api-key"
