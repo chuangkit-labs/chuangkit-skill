@@ -1,0 +1,25 @@
+{
+  "name": "chuangkit-agent-cli",
+  "version": "0.1.1",
+  "description": "Command-line client for Chuangkit Agent creative workflows",
+  "license": "MIT",
+  "author": "chuangkit-labs",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "ckt-agent": "bin/chuangkit.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ]
+}
