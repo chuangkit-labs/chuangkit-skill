@@ -40,4 +40,14 @@ ckt-agent result download --request-id "<request_id>"
 All command results are JSON. Credentials are stored in the user configuration
 directory with restrictive file permissions.
 
+## Release
+
+From the repository root, run the one-command release script:
+
+```bash
+./cli/release.sh
+```
+
+The script runs tests, increments the patch version, synchronizes the WorkBuddy installation version, checks the package contents, and publishes to npm. Commit the version changes after a successful release; failed releases restore the automatic version changes.
+
 中文说明见 [README.md](https://github.com/chuangkit-labs/chuangkit-skill/blob/main/cli/README.md)。

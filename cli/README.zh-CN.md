@@ -63,4 +63,14 @@ node bin/chuangkit.js --help
 npm pack --dry-run
 ```
 
+## 发布
+
+在仓库根目录直接执行一键发布脚本：
+
+```bash
+./cli/release.sh
+```
+
+脚本会自动运行测试、升级 patch 版本、同步 WorkBuddy 安装版本、检查打包内容并发布 npm。发布成功后，再提交版本变更；发布失败时会恢复自动升版产生的修改。
+
 English documentation: [README.en.md](https://github.com/chuangkit-labs/chuangkit-skill/blob/main/cli/README.en.md)。
