@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Chuangkit AI creative connector</title>
+  <desc id="desc">An abstract canvas and spark icon for the Chuangkit connector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B5CE2"/>
+      <stop offset="1" stop-color="#9B51E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <path d="M29 38c0-5 4-9 9-9h42c5 0 9 4 9 9v42c0 5-4 9-9 9H38c-5 0-9-4-9-9V38Z" fill="none" stroke="#fff" stroke-width="7"/>
+  <path d="m44 76 13-17 10 11 8-10 12 16H44Z" fill="#fff" opacity=".95"/>
+  <path d="M88 25v20M78 35h20" stroke="#FFD66B" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -43,6 +43,33 @@ export CHUANGKIT_AGENT_SKILL_API_KEY="your-api-key"
 
 🎉 安装完成后，Agent 就可以按 skill 定义自动接入创客贴创作链路，不需要手动拼接口。
 
+## 🧩 WorkBuddy Connector
+
+本仓库同时维护 WorkBuddy 的 CLI 接入版本：
+
+```text
+workbuddy/chuangkit-cli-connector/
+├── connector-meta.json
+├── cli.json
+├── icon.svg
+└── skills/SKILL.md
+```
+
+提交 WorkBuddy 市场时，直接提交 [chuangkit-cli-connector](/Users/wangxt/workspace/project/aigc/chuangkit-skill/workbuddy/chuangkit-cli-connector) 完整目录。
+
+WorkBuddy 的 `auth login` 使用浏览器授权：前端负责登录、查询/创建并选择
+AccessKey，CLI 通过后端一次性会话换取最终凭证。
+
+Node CLI 源码位于 [cli](/Users/wangxt/workspace/project/aigc/chuangkit-skill/cli)，现有 Python Skill 脚本位于 [scripts](/Users/wangxt/workspace/project/aigc/chuangkit-skill/scripts)。两套入口共享同一套 API 契约，但分别维护适配层；现有 Skill 不依赖 Node CLI。
+
+本地开发 Node CLI：
+
+```bash
+node cli/bin/chuangkit.js --help
+node cli/bin/chuangkit.js --version
+node cli/bin/chuangkit.js auth status
+```
+
 ## 🌟 这个 Skill 的特别之处
 
 和常见的“发请求拿结果”式 skill 不同，`chuangkit-skill` 更强调创作上下文，而不只是一次接口调用。
@@ -174,8 +201,20 @@ python3 scripts/download_results.py --request-id "<request_id>"
 
 ```text
 chuangkit-skill/
+├── cli/
+│   ├── package.json
+│   ├── README.md
+│   ├── bin/chuangkit.js
+│   ├── src/
+│   └── test/
 ├── README.md
 ├── SKILL.md
+├── workbuddy/
+│   └── chuangkit-cli-connector/
+│       ├── connector-meta.json
+│       ├── cli.json
+│       ├── icon.svg
+│       └── skills/SKILL.md
 └── scripts/
     ├── _common.py
     ├── upload_file.py

@@ -1,4 +1,4 @@
-# chuangkit-agent-cli
+# @chuangkit-labs/agent-cli
 
 `ckt-agent` 是创客贴 Agent 创作 CLI，适用于 WorkBuddy 以及其他支持 CLI Skill 的 Agent 宿主。
 运行环境要求 Node.js 18 及以上；WorkBuddy Connector 会准备 Node.js 20。
@@ -6,7 +6,7 @@
 ## 安装
 
 ```bash
-npm install --global chuangkit-agent-cli
+npm install --global @chuangkit-labs/agent-cli
 ```
 
 安装后使用的命令名是 `ckt-agent`。
@@ -63,4 +63,4 @@ node bin/chuangkit.js --help
 npm pack --dry-run
 ```
 
-English documentation: [README.md](https://github.com/chuangkit-labs/chuangkit-skill/blob/main/cli/README.md)。
+English documentation: [README.en.md](https://github.com/chuangkit-labs/chuangkit-skill/blob/main/cli/README.en.md)。

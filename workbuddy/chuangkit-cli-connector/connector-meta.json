@@ -1,0 +1,19 @@
+{
+  "name": "创客贴 AI 创作",
+  "description": "Create and edit designs with Chuangkit via CLI.",
+  "description_zh": "通过创客贴 CLI 生成、编辑和续作图片与设计，上传参考素材、查询异步进度并下载结果。",
+  "description_en": "Create, edit and continue image designs with Chuangkit via CLI. Upload references, track asynchronous tasks and download results.",
+  "source": "chuangkit",
+  "type": "cli",
+  "minWorkbuddyVersion": "4.22.12",
+  "examples_zh": [
+    "帮我生成一张夏日饮品海报",
+    "上传这张参考图，继续做三版电商主图",
+    "查看这个创作任务的进度并下载结果"
+  ],
+  "examples_en": [
+    "Create a summer beverage poster",
+    "Upload this reference image and create three e-commerce designs",
+    "Check the task status and download the result"
+  ]
+}

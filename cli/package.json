@@ -1,5 +1,5 @@
 {
-  "name": "chuangkit-agent-cli",
+  "name": "@chuangkit-labs/agent-cli",
   "version": "0.1.1",
   "description": "Command-line client for Chuangkit Agent creative workflows",
   "license": "MIT",
@@ -19,6 +19,7 @@
     "bin",
     "src",
     "README.md",
+    "README.en.md",
     "README.zh-CN.md",
     "LICENSE"
   ]
